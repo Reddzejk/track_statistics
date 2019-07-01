@@ -9,8 +9,10 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <flink.version>1.7.0</flink.version>
         <java.version>1.8.0</java.version>
+        <scala.binary.version>2.11</scala.binary.version>
         <flinkspector.version>0.9.4</flinkspector.version>
     </properties>
     <dependencies>
@@ -21,12 +23,12 @@
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-streaming-java_2.11</artifactId>
+            <artifactId>flink-streaming-java_${scala.binary.version}</artifactId>
             <version>${flink.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-connector-kafka_2.11</artifactId>
+            <artifactId>flink-connector-kafka_${scala.binary.version}</artifactId>
             <version>${flink.version}</version>
         </dependency>
 
@@ -34,19 +36,36 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.7.25</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.25</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-math3</artifactId>
+            <version>3.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>28.0-jre</version>
         </dependency>
 
 
         <!--Test Dependencies-->
         <dependency>
             <groupId>io.flinkspector</groupId>
-            <artifactId>flinkspector-core_2.12</artifactId>
+            <artifactId>flinkspector-core_${scala.binary.version}</artifactId>
             <version>${flinkspector.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.flinkspector</groupId>
-            <artifactId>flinkspector-datastream_2.11</artifactId>
+            <artifactId>flinkspector-datastream_${scala.binary.version}</artifactId>
             <version>${flinkspector.version}</version>
             <scope>test</scope>
         </dependency>
