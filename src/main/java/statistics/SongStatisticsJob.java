@@ -49,7 +49,7 @@ public class SongStatisticsJob {
 
     @VisibleForTesting
     void buildProcessWithSinks(DataStream<SongInformationTuple3> sourceStream) {
-  //TODO: ADDOtherSInk
+        //TODO: ADDOtherSInk
         SubFlux<SongInformationTuple3, RankingPerDay<Long>> topSong
                 = new SubFlux<>(sourceStream, new RankingSongProcessor(new TopWindowProcessFunction<>(TOP_LENGTH)), DataStream::printToErr);
 

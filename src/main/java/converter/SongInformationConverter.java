@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- *Pretty way to map String to SongInformationTuple3.
+ * Pretty way to map String to SongInformationTuple3.
  */
 public enum SongInformationConverter {
     USER_ID("userId") {

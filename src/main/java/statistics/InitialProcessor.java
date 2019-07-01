@@ -5,6 +5,7 @@ import converter.SongInformationTuple3;
 import org.apache.flink.api.common.typeinfo.TypeHint;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.functions.timestamps.AscendingTimestampExtractor;
+
 //Todo: maybe we need other Assigner without anomalies logging
 public class InitialProcessor implements Processor<String, SongInformationTuple3> {
     @Override

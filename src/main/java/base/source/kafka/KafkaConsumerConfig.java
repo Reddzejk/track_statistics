@@ -2,7 +2,6 @@ package base.source.kafka;
 
 import org.apache.flink.api.common.serialization.DeserializationSchema;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer;
-import org.apache.flink.streaming.util.serialization.KeyedDeserializationSchema;
 
 import java.util.List;
 import java.util.Properties;
