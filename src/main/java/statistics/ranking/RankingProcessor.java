@@ -1,6 +1,7 @@
 package statistics.ranking;
 
 import base.Processor;
+import converter.LocalDateConverter;
 import converter.SongInformationTuple3;
 import org.apache.flink.api.common.typeinfo.TypeHint;
 import org.apache.flink.api.java.tuple.Tuple3;
@@ -8,8 +9,6 @@ import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.windowing.assigners.TumblingEventTimeWindows;
 import org.apache.flink.streaming.api.windowing.time.Time;
 import statistics.ranking.top.TopWindowProcessFunction;
-import util.LocalDateConverter;
-import util.RankingPerDay;
 
 import java.time.LocalDate;
 

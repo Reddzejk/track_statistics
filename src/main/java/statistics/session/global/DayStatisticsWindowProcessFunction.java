@@ -1,5 +1,6 @@
 package statistics.session.global;
 
+import com.google.common.collect.Iterables;
 import com.google.common.collect.Ordering;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.api.java.tuple.Tuple5;

@@ -3,7 +3,7 @@ package converter;
 import org.apache.flink.api.java.tuple.Tuple3;
 
 public class SongInformationTuple3 extends Tuple3<String, Long, Long> {
-    private SongInformationTuple3() {
+    public SongInformationTuple3() {
         super();
     }
 

@@ -13,7 +13,7 @@ public class SubFlux<I, O> {
         this.sink = streamSink;
     }
 
-    public void buildSubFlux() {
+    public void buildSubFlux() throws Exception {
         DataStream<O> processStream = processor.processStream(sourceStream);
         sink.applySink(processStream);
     }

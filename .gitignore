@@ -111,7 +111,11 @@ modules.xml
 *.tar.gz
 *.rar
 
+target/
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+
 
 # End of https://www.gitignore.io/api/java,intellij+all
