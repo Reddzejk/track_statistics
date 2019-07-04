@@ -60,7 +60,7 @@ class RankingSongProcessorTest extends DataStreamTestBaseJUnit5 {
     }
 
     @Test
-    void shouldReturn10RecordsWithTopUsersPerDayAndIgnoreOtherUsers() {
+    void shouldReturnTop3RecordsWithSongsPerDayAndIgnoreOtherSongs() {
         List<String> logs = Arrays.asList(
                 "userId=John, songId=1, startTime=\"2016-10-12T10:23:15Z\"",
                 "userId=John, songId=1, startTime=\"2016-10-12T10:23:16Z\"",
